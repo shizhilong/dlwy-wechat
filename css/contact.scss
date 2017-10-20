@@ -1,0 +1,163 @@
+@import "selfsass";
+
+html, body {
+  @include rect(100%, auto);
+  background: #F3F3F3;
+}
+
+.contact-title{
+  @include rect(100%,.3rem);
+  margin: .2rem auto;
+  color:#16ACF0;
+  position: relative;
+  padding:0 .24rem;
+  .blue{
+    @include rect(90%,.02rem);
+    position: absolute;
+    top: -.1rem;
+    left: .24rem;
+  }
+  span{
+    display: block;
+    @include rect(1.4rem,100%);
+    background: #F3F3F3;
+    padding: 0 .1rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    z-index:10;
+    text-align: center;
+  }
+}
+
+.contact-address{
+  @include rect(100%,auto);
+  padding: .24rem;
+  padding-top: 0;
+  overflow: hidden;
+  .address-nav{
+    @include rect(30%,auto);
+    float: left;
+    li{
+      @include rect(100%,.38rem);
+      padding: 0 .2rem;
+      line-height: .38rem;
+      font-size: .22rem;
+      margin-bottom: .1rem;
+      border-left: .06rem solid #16ACF0;
+    }
+    .active{
+      background: #16ACF0;
+      color: #ffffff;
+      text-align: right;
+    }
+  }
+  .address-message{
+    @include rect(68%,auto);
+    float: right;
+    overflow: hidden;
+    section{
+      width: 100%;
+      height: 4.2rem;
+      background: #797979;
+      border-radius: .1rem;
+      color: #ffffff;
+      display: none;
+      .stitle{
+        @include rect(100%,.8rem);
+        text-align: center;
+        line-height: .8rem;
+        position: relative;
+        .mask{
+          @include rect(18%,100%);
+          text-align: left;
+          line-height: .4rem;
+          padding-left: .06rem;
+          position: absolute;
+          top:0;
+          left:0;
+        }
+        span{
+          color: #16ACF0;
+          font-size: .36rem;
+        }
+      }
+      ol{
+        @include rect(100%,auto);
+        font-size: .22rem;
+        padding:.2rem;
+        li{
+          @include rect(100%,auto);
+          margin-bottom: .06rem;
+          border-radius: 0;
+          display: block;
+          line-height: .36rem;
+        }
+      }
+    }
+  }
+}
+
+.contact-map{
+  @include rect(100%,3.2rem);
+  padding: 0 .24rem;
+  img{
+    border: .01rem solid #CCCCCC;
+  }
+}
+
+.contact-message{
+  @include rect(100%,3.68rem);
+  margin-bottom: .16rem;
+  overflow: hidden;
+  .left{
+    @include rect(60%,100%);
+    float: left;
+    padding:.24rem;
+    ul{
+      @include rect(100%,100%);
+      li{
+        @include rect(100%,.64rem);
+        .left1{
+          @include rect(25%,100%);
+          float: left;
+          display: flex;
+          justify-content: center;
+          img{
+            @include zheng(.34rem);
+            margin-top: .3rem;
+          }
+        }
+        .right1{
+          @include rect(75%,100%);
+          float: left;
+          border-bottom: .01rem solid #16ACF0;
+          color: #16ACF0;
+          padding: .24rem 0 0 .36rem;
+        }
+      }
+    }
+  }
+  .right{
+    @include rect(40%,100%);
+    float: left;
+    .imgbox{
+      @include rect(100%,70%);
+      display: flex;
+      justify-content: center;
+      img{
+        margin-top: 1rem;
+        @include zheng(1.4rem);
+      }
+    }
+    p{
+      @include rect(100%,30%);
+      text-align: center;
+      color:#16ACF0;
+      font-size: .3rem;
+    }
+  }
+}

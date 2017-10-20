@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: auto;
+  background: #EEEEEE; }
+
+.equip-guide {
+  width: 100%;
+  height: 0.66rem;
+  line-height: .66rem;
+  padding: 0 .24rem; }
+  .equip-guide img {
+    width: 0.12rem;
+    height: 0.2rem; }
+  .equip-guide i {
+    font-style: normal; }
+
+.equip-snav {
+  width: 100%;
+  height: auto; }
+  .equip-snav ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: .01rem solid #CCCCCC;
+    border-bottom: .01rem solid #CCCCCC; }
+    .equip-snav ul li {
+      width: 25%;
+      height: 0.64rem;
+      float: left;
+      border-bottom: .01rem solid #CCCCCC;
+      border-right: .01rem solid #CCCCCC;
+      text-align: center;
+      line-height: .64rem; }
+
+section {
+  width: 100%;
+  min-height: 5.15rem;
+  padding: 0 .23rem;
+  padding-bottom: .4rem; }
+  section .title {
+    width: 100%;
+    height: 0.7rem;
+    color: #232322;
+    font-size: .26rem;
+    line-height: .8rem;
+    border-bottom: .01rem solid #CCCCCC; }
+  section ul {
+    width: 100%;
+    height: auto;
+    margin-top: .18rem;
+    display: flex;
+    flex-wrap: wrap; }
+    section ul li {
+      width: 2.32rem;
+      height: 1.92rem;
+      background: #ffffff;
+      margin: 0 0 .02rem .02rem;
+      padding: .1rem; }
+      section ul li .imgbox {
+        width: 100%;
+        height: 1.28rem; }
+      section ul li p {
+        width: 100%;
+        height: 0.44rem;
+        text-align: center;
+        line-height: .54rem;
+        color: #232322; }

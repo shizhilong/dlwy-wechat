@@ -1,0 +1,525 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: auto; }
+
+::-webkit-scrollbar {
+  height: 0.04rem;
+  width: 0; }
+
+::-webkit-scrollbar-track {
+  background-color: #dffffc; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #16ACF0;
+  border-radius: .04rem; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9c3; }
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #00aff0; }
+
+.index-service {
+  width: 100%;
+  height: 1.29rem;
+  padding: .4rem 0; }
+  .index-service .title {
+    width: 100%;
+    height: 0.55rem;
+    margin-bottom: .24rem; }
+    .index-service .title .inner {
+      width: 4rem;
+      height: 100%;
+      margin: 0 auto;
+      font-size: .2rem; }
+      .index-service .title .inner .s-title {
+        width: 2rem;
+        height: 100%;
+        float: left;
+        color: #333333; }
+        .index-service .title .inner .s-title p {
+          text-align: center; }
+      .index-service .title .inner .line {
+        width: 1rem;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center; }
+        .index-service .title .inner .line span {
+          width: 1rem;
+          height: 0.02rem;
+          background: #CCCCCC; }
+
+.index-scroll {
+  width: 7.5rem;
+  height: 2rem;
+  overflow-y: hidden; }
+  .index-scroll ul {
+    width: 11.25rem;
+    height: 2rem; }
+    .index-scroll ul li {
+      width: 1.875rem;
+      height: 100%;
+      float: left; }
+      .index-scroll ul li .imgbox {
+        width: 100%;
+        height: 1.08rem;
+        display: flex;
+        justify-content: center; }
+        .index-scroll ul li .imgbox img {
+          width: 1.06rem;
+          height: 1.06rem;
+          border: .02rem solid #CCCCCC;
+          border-radius: 50%; }
+      .index-scroll ul li .line {
+        width: 100%;
+        height: 0.42rem;
+        display: flex;
+        justify-content: center; }
+        .index-scroll ul li .line span {
+          display: block;
+          width: 30%;
+          height: 0.02rem;
+          margin: .2rem 0;
+          background: #000000; }
+      .index-scroll ul li p {
+        color: #333333;
+        text-align: center; }
+
+.index-friend {
+  width: 100%;
+  height: 3rem;
+  padding: .4rem .24rem;
+  position: relative; }
+  .index-friend .title {
+    width: 100%;
+    height: 0.55rem;
+    margin-bottom: .24rem; }
+    .index-friend .title .inner {
+      width: 6.4rem;
+      height: 100%;
+      margin: 0 auto;
+      font-size: .2rem; }
+      .index-friend .title .inner .s-title {
+        width: 4.4rem;
+        height: 100%;
+        float: left;
+        color: #333333; }
+        .index-friend .title .inner .s-title p {
+          text-align: center; }
+      .index-friend .title .inner .line {
+        width: 1rem;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center; }
+        .index-friend .title .inner .line span {
+          width: 1rem;
+          height: 0.02rem;
+          background: #CCCCCC; }
+  .index-friend .rotate {
+    width: 1.44rem;
+    height: 1.44rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; }
+    .index-friend .rotate .border {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 .1rem;
+      animation: progress 5s infinite linear; }
+    .index-friend .rotate .backg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+@keyframes progress {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+  .index-friend .content {
+    width: 100%;
+    height: 1.41rem; }
+  .index-friend .swiper2-ul {
+    width: 100%;
+    height: 100%; }
+    .index-friend .swiper2-ul li {
+      width: 2.56rem;
+      height: 0.56rem;
+      margin: .075rem 0;
+      float: left; }
+    .index-friend .swiper2-ul .right {
+      float: right; }
+
+.index-about {
+  width: 100%;
+  height: 4rem;
+  padding: .4rem .24rem; }
+  .index-about .title {
+    width: 100%;
+    height: 0.55rem;
+    margin-bottom: .24rem; }
+    .index-about .title .inner {
+      width: 3.8rem;
+      height: 100%;
+      margin: 0 auto;
+      font-size: .2rem; }
+      .index-about .title .inner .s-title {
+        width: 1.8rem;
+        height: 100%;
+        float: left;
+        color: #333333; }
+        .index-about .title .inner .s-title p {
+          text-align: center; }
+      .index-about .title .inner .line {
+        width: 1rem;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center; }
+        .index-about .title .inner .line span {
+          width: 1rem;
+          height: 0.02rem;
+          background: #CCCCCC; }
+  .index-about .content {
+    width: 100%;
+    height: 2.41rem; }
+    .index-about .content .left {
+      width: 2rem;
+      height: 100%;
+      background: #8AD5F7;
+      float: left;
+      position: relative; }
+      .index-about .content .left .imgbox {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: .2rem;
+        left: .2rem; }
+    .index-about .content .right {
+      width: 5.02rem;
+      height: 2rem;
+      margin-top: .41rem;
+      border: .02rem solid #CCCCCC;
+      float: left;
+      padding: .15rem .15rem .15rem .4rem; }
+      .index-about .content .right .up {
+        width: 100%;
+        height: 80%;
+        color: #333333;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        /** 对象作为伸缩盒子模型显示 **/
+        -webkit-box-orient: vertical;
+        /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+        -webkit-line-clamp: 4;
+        /** 显示的行数 **/
+        overflow: hidden;
+        /** 隐藏超出的内容 **/ }
+      .index-about .content .right .do {
+        width: 1.26rem;
+        height: 0.4rem;
+        background: #16ACF0;
+        text-align: center;
+        color: #ffffff;
+        line-height: .4rem;
+        float: right; }
+
+.index-case {
+  width: 100%;
+  height: 3.6rem;
+  padding: .4rem .24rem; }
+  .index-case .title {
+    width: 100%;
+    height: 0.55rem;
+    margin-bottom: .24rem; }
+    .index-case .title .inner {
+      width: 4.8rem;
+      height: 100%;
+      margin: 0 auto;
+      font-size: .2rem; }
+      .index-case .title .inner .s-title {
+        width: 2.8rem;
+        height: 100%;
+        float: left;
+        color: #333333; }
+        .index-case .title .inner .s-title p {
+          text-align: center; }
+      .index-case .title .inner .line {
+        width: 1rem;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center; }
+        .index-case .title .inner .line span {
+          width: 1rem;
+          height: 0.02rem;
+          background: #CCCCCC; }
+  .index-case .swiper3 {
+    width: 100%;
+    height: 2.01rem; }
+    .index-case .swiper3 .swiper-slide {
+      width: 2.18rem;
+      height: 100%;
+      border-radius: .1rem; }
+      .index-case .swiper3 .swiper-slide .imgbox {
+        width: 100%;
+        height: 75%; }
+        .index-case .swiper3 .swiper-slide .imgbox img {
+          border-radius: .1rem .1rem 0 0; }
+      .index-case .swiper3 .swiper-slide .text {
+        width: 100%;
+        height: 25%;
+        background: #EEEEEE;
+        color: #333333;
+        text-align: center;
+        line-height: .5rem;
+        border-bottom: .04rem solid #16ACF0;
+        border-radius: 0 0 .1rem .1rem; }
+
+.index-care {
+  width: 100%;
+  height: 3.2rem;
+  padding: .4rem .24rem; }
+  .index-care .title {
+    width: 100%;
+    height: 0.55rem;
+    margin-bottom: .24rem; }
+    .index-care .title .inner {
+      width: 4.8rem;
+      height: 100%;
+      margin: 0 auto;
+      font-size: .2rem; }
+      .index-care .title .inner .s-title {
+        width: 2.8rem;
+        height: 100%;
+        float: left;
+        color: #333333; }
+        .index-care .title .inner .s-title p {
+          text-align: center; }
+      .index-care .title .inner .line {
+        width: 1rem;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center; }
+        .index-care .title .inner .line span {
+          width: 1rem;
+          height: 0.02rem;
+          background: #CCCCCC; }
+  .index-care .content {
+    width: 100%;
+    height: 1.61rem; }
+    .index-care .content li {
+      width: 25%;
+      height: 100%;
+      float: left; }
+      .index-care .content li .imgbox {
+        width: 1.22rem;
+        height: 1.22rem;
+        border-radius: 50%;
+        margin: 0 auto; }
+        .index-care .content li .imgbox img {
+          border-radius: 50%; }
+      .index-care .content li p {
+        width: 100%;
+        height: 0.39rem;
+        text-align: center;
+        margin-top: .14rem; }
+
+.index-team {
+  width: 100%;
+  height: 6.2rem;
+  padding: .4rem .24rem; }
+  .index-team .title {
+    width: 100%;
+    height: 0.55rem;
+    margin-bottom: .24rem; }
+    .index-team .title .inner {
+      width: 4rem;
+      height: 100%;
+      margin: 0 auto;
+      font-size: .2rem; }
+      .index-team .title .inner .s-title {
+        width: 2rem;
+        height: 100%;
+        float: left;
+        color: #333333; }
+        .index-team .title .inner .s-title p {
+          text-align: center; }
+      .index-team .title .inner .line {
+        width: 1rem;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center; }
+        .index-team .title .inner .line span {
+          width: 1rem;
+          height: 0.02rem;
+          background: #CCCCCC; }
+  .index-team .content {
+    width: 100%;
+    height: 4.61rem;
+    position: relative; }
+    .index-team .content .circle {
+      width: 4rem;
+      height: 4rem;
+      position: absolute;
+      top: .3rem;
+      right: .5rem; }
+      .index-team .content .circle .person1 {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: -0.3rem;
+        left: .6rem; }
+        .index-team .content .circle .person1 img {
+          border-radius: 50%; }
+      .index-team .content .circle .person2 {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: -.4rem;
+        left: 2.3rem; }
+        .index-team .content .circle .person2 img {
+          border-radius: 50%; }
+      .index-team .content .circle .person3 {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: 1rem;
+        left: 3.5rem; }
+        .index-team .content .circle .person3 img {
+          border-radius: 50%; }
+      .index-team .content .circle .person4 {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: 2.5rem;
+        left: 2.9rem; }
+        .index-team .content .circle .person4 img {
+          border-radius: 50%; }
+      .index-team .content .circle .person5 {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: 3.4rem;
+        left: 1.7rem; }
+        .index-team .content .circle .person5 img {
+          border-radius: 50%; }
+      .index-team .content .circle .person6 {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: 3.2rem;
+        left: .4rem; }
+        .index-team .content .circle .person6 img {
+          border-radius: 50%; }
+    .index-team .content .imac {
+      width: 3.84rem;
+      height: 2.2rem;
+      position: absolute;
+      top: 1.2rem;
+      left: .1rem; }
+
+.index-contact {
+  width: 100%;
+  height: 3.93rem;
+  padding: .4rem 0; }
+  .index-contact .title {
+    width: 100%;
+    height: 0.55rem;
+    margin-bottom: .24rem; }
+    .index-contact .title .inner {
+      width: 4rem;
+      height: 100%;
+      margin: 0 auto;
+      font-size: .2rem; }
+      .index-contact .title .inner .s-title {
+        width: 2rem;
+        height: 100%;
+        float: left;
+        color: #333333; }
+        .index-contact .title .inner .s-title p {
+          text-align: center; }
+      .index-contact .title .inner .line {
+        width: 1rem;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center; }
+        .index-contact .title .inner .line span {
+          width: 1rem;
+          height: 0.02rem;
+          background: #CCCCCC; }
+  .index-contact .content {
+    width: 100%;
+    height: 2.34rem;
+    padding: .34rem .54rem; }
+    .index-contact .content .inner {
+      width: 100%;
+      height: 100%;
+      border-radius: .1rem;
+      background: rgba(22, 172, 240, 0.5);
+      color: #dceaf1; }
+      .index-contact .content .inner li {
+        width: 2.14rem;
+        height: 100%;
+        padding: .15rem 0;
+        float: left;
+        position: relative;
+        font-size: .14rem; }
+        .index-contact .content .inner li .line1 {
+          width: 0.02rem;
+          height: 1rem;
+          position: absolute;
+          top: .25rem;
+          right: 0; }
+        .index-contact .content .inner li .imgbox {
+          width: 100%;
+          height: 0.4rem; }
+          .index-contact .content .inner li .imgbox img {
+            width: 0.4rem;
+            height: 0.4rem;
+            display: block;
+            margin: 0 auto; }
+        .index-contact .content .inner li p {
+          width: 100%;
+          height: auto;
+          text-align: center;
+          margin-top: .03rem; }
+          .index-contact .content .inner li p span {
+            display: block;
+            margin: 0 auto;
+            width: 0.2rem;
+            height: 0.02rem;
+            background: #ffffff; }

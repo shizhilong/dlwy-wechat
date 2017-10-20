@@ -1,0 +1,210 @@
+@import "selfsass";
+
+html, body {
+  @include rect(100%, auto);
+}
+
+.protection-main{
+  @include rect(100%,auto);
+  .protection-inner{
+    @include rect(1170px,auto);
+    margin:0 auto;
+    padding:48px 0;
+    .big-title{
+      @include rect(100%,120px);
+      p{
+        text-align: center;
+        color: #333333;
+        letter-spacing: 3px;
+      }
+      .t1{
+        font-size: 32px;
+        color:#16acf0;
+        margin-bottom:20px;
+        span{
+          font-weight: bold;
+        }
+      }
+      .t2{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom:10px;
+      }
+      .t3{
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+    }
+    .protection-ul{
+      @include rect(100%,180px);
+      margin: 24px 0 48px 0;
+      li{
+        @include rect(180px,100%);
+        margin-left: 67.5px;
+        border-radius: 50%;
+        float: left;
+        img{
+          @include rect(100%,100%);
+          border-radius: 50%;
+        }
+      }
+      li:first-of-type{
+        margin-left:0;
+      }
+    }
+    .message{
+      @include rect(100%,320px);
+      margin: 32px 0 48px 0;
+      .imgbox{
+        @include rect(50%,100%);
+        float: left;
+        img{
+          @include rect(100%,100%);
+        }
+      }
+      .text{
+        @include rect(50%,100%);
+        float: left;
+        background: #EEEEEE;
+        padding:24px;
+        font-size: 18px;
+        color: #333333;
+        line-height: 30px;
+      }
+    }
+    .carousel{
+      @include rect(850px,260px);
+      margin:48px auto;
+      position:relative;
+    }
+    .last-contact{
+      @include rect(100%,auto);
+      overflow: hidden;
+      font-size: 18px;
+      color: #333333;
+      line-height: 35px;
+      letter-spacing: 1px;
+      .left{
+        @include rect(360px,auto);
+        float: left;
+        span{
+          font-weight: bold;
+        }
+      }
+      .right{
+        @include rect(360px,auto);
+        float: right;
+        i{
+          @include rect(16%,100%);
+          display: block;
+          float: left;
+          font-style: normal;
+        }
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.guarantee-main{
+  @include rect(100%,auto);
+  padding: .24rem;
+  h2{
+    color: #16acf0;
+    margin-bottom: .12rem;
+    text-align: center;
+  }
+  h4,h5{
+    margin-bottom: .08rem;
+    text-align: center;
+  }
+  .list{
+    @include rect(100%,auto);
+    display: flex;
+    justify-content: space-between;
+    margin-top: .16rem;
+    margin-bottom: .24rem;
+    li{
+      @include rect(1rem,auto);
+      .imgbox{
+        @include zheng(1rem);
+      }
+      .explain{
+        text-align: center;
+        line-height: .32rem;
+        font-size: .22rem;
+        padding: .1rem 0;
+      }
+    }
+  }
+  .easy{
+    @include rect(100%,2.1rem);
+    margin-top: .16rem;
+    margin-bottom: .4rem;
+    .imgbox{
+      @include rect(50%,100%);
+      float: left;
+    }
+    .text{
+      @include rect(50%,100%);
+      padding:.16rem;
+      background: #EEEEEE;
+      color: #333333;
+      font-size: .22rem;
+      line-height: .31rem;
+      float: left;
+    }
+  }
+  .carousel{
+    @include rect(100%,1.86rem);
+    position: relative;
+    .swiper-container{
+      @include rect(80%,1.86rem);
+      margin: 0 auto;
+      margin-top: .16rem;
+      margin-bottom: .4rem;
+      .swiper-wrapper{
+        @include rect(100%,100%);
+        .swiper-slide{
+          @include rect(100%,100%);
+        }
+      }
+      .swiper-pagination{
+        bottom:0;
+      }
+    }
+    .swiper-button-next{
+      @include zheng(.5rem);
+      transform: translate(50% ,0);
+
+    }
+    .swiper-button-prev{
+      @include zheng(.5rem);
+      transform: translate(-50% ,0);
+    }
+  }
+  p{
+    margin-top: .1rem;
+    color: #333333;
+    span{
+      font-weight: bold;
+    }
+  }
+  .last{
+    @include rect(100%,auto);
+    overflow: hidden;
+    i{
+      @include rect(18%,auto);
+      float: left;
+      display: block;
+      font-style: normal;
+    }
+    span{
+      @include rect(82%,auto);
+      float: left;
+      display: block;
+    }
+  }
+}

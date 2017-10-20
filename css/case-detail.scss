@@ -1,0 +1,109 @@
+@import "selfsass";
+
+html, body {
+  @include rect(100%, auto);
+  background: #EEEEEE;
+}
+
+.intro-logo{
+  @include rect(4.82rem,1.64rem);
+  margin: .4rem auto;
+}
+
+.cdetail-title{
+  @include rect(100%,.3rem);
+  margin: .2rem auto;
+  color:#16ACF0;
+  position: relative;
+  padding:0 .24rem;
+  .blue{
+    @include rect(90%,.02rem);
+    position: absolute;
+    top: -.1rem;
+    left: .24rem;
+  }
+  span{
+    display: block;
+    @include rect(1.4rem,100%);
+    background: #eeeeee;
+    padding: 0 .1rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    z-index:10;
+    text-align: center;
+  }
+}
+
+.cdetail-main{
+  width: 100%;
+  min-height: 6.04rem;
+  padding:0 .24rem;
+  margin-bottom: .4rem;
+  background: #ffffff;
+  .stitle{
+    @include rect(100%, .6rem);
+    text-align: center;
+    line-height: .6rem;
+    font-size: .3rem;
+    font-weight: bold;
+  }
+  .message{
+    @include rect(100%, .6rem);
+    color:#CCCCCC;
+    span{
+      i{
+        font-style: normal;
+      }
+    }
+    span:first-of-type{
+      float: left;
+    }
+    span:last-of-type{
+      float: right;
+    }
+  }
+  .text{
+    @include rect(100%,auto);
+    padding-bottom: .24rem;
+    font-size: .23rem;
+    line-height: .32rem;
+  }
+}
+
+.tdetail-main{
+  width: 100%;
+  min-height: 6.04rem;
+  padding:0 .24rem;
+  margin-bottom: .4rem;
+  background: #ffffff;
+  .stitle{
+    @include rect(100%, .6rem);
+    text-align: center;
+    line-height: .6rem;
+    font-size: .3rem;
+    font-weight: bold;
+  }
+  .text{
+    @include rect(100%,auto);
+    padding-bottom: .24rem;
+    img{
+      @include rect(2.6rem,3rem);
+      float: right;
+      margin:.2rem 0 .2rem .2rem;
+    }
+    p{
+      line-height: .38rem;
+      span{
+        font-weight: bold;
+        font-size: .26rem;
+      }
+      i{
+        font-style: normal;
+      }
+    }
+  }
+}

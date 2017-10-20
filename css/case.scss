@@ -1,0 +1,76 @@
+@import "selfsass";
+
+html, body {
+  @include rect(100%, auto);
+}
+
+.case-main{
+  @include rect(100%,auto);
+  padding: 0 .24rem;
+  padding-bottom: .4rem;
+  .title{
+    @include rect(100%, .7rem);
+    color: #232322;
+    font-size: .26rem;
+    line-height: .8rem;
+    border-bottom: .01rem solid #CCCCCC;
+  }
+  .case-ul{
+    @include rect(100%,auto);
+    position: relative;
+    .line{
+      @include rect(.01rem,100%);
+      background: #CCCCCC;
+      position: absolute;
+      top:0;
+      left:.84rem;
+    }
+    li{
+      @include rect(100%,2.34rem);
+      padding-top: .4rem;
+      color: #333333;
+      .left{
+        @include rect(.6rem,100%);
+        padding-top: .24rem;
+        float: left;
+      }
+      .midd{
+        @include rect(.5rem,100%);
+        padding-top: .36rem;
+        float: left;
+        display: flex;
+        justify-content: center;
+        span{
+          @include zheng(.1rem);
+          background: #CCCCCC;
+          border-radius: 50%;
+        }
+      }
+      .righ{
+        @include rect(5.92rem,100%);
+        float: left;
+        border-bottom: .01rem solid #CCCCCC;
+        padding-bottom:.24rem;
+        .imgbox{
+          @include rect(2.4rem,100%);
+          float: left;
+        }
+        .text{
+          @include rect(3.52rem,100%);
+          padding-left:.24rem;
+          float: left;
+          p{
+            @include rect(100%,auto);
+            line-height: .36rem;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+            -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+            -webkit-line-clamp: 3; /** 显示的行数 **/
+            overflow: hidden;  /** 隐藏超出的内容 **/
+          }
+        }
+      }
+    }
+  }
+}

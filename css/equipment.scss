@@ -1,0 +1,72 @@
+@import "selfsass";
+
+html, body {
+  @include rect(100%, auto);
+  background: #EEEEEE;
+}
+
+.equip-guide{
+  @include rect(100%,.66rem);
+  line-height: .66rem;
+  padding: 0 .24rem;
+  img{
+    @include rect(.12rem,.2rem);
+  }
+  i{
+    font-style: normal;
+  }
+}
+
+.equip-snav{
+  @include rect(100%,auto);
+  ul{
+    @include rect(100%,auto);
+    overflow: hidden;
+    background: #ffffff;
+    border-top:.01rem solid #CCCCCC;
+    border-bottom:.01rem solid #CCCCCC;
+    li{
+      @include rect(25%,.64rem);
+      float: left;
+      border-bottom:.01rem solid #CCCCCC;
+      border-right:.01rem solid #CCCCCC;
+      text-align: center;
+      line-height: .64rem;
+    }
+  }
+}
+
+section {
+  width: 100%;
+  min-height:5.15rem;
+  padding: 0 .23rem;
+  padding-bottom: .4rem;
+  .title {
+    @include rect(100%, .7rem);
+    color: #232322;
+    font-size: .26rem;
+    line-height: .8rem;
+    border-bottom: .01rem solid #CCCCCC;
+  }
+  ul{
+    @include rect(100%,auto);
+    margin-top: .18rem;
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      @include rect(2.32rem,1.92rem);
+      background: #ffffff;
+      margin: 0 0 .02rem .02rem;
+      padding:.1rem;
+      .imgbox{
+        @include rect(100%,1.28rem);
+      }
+      p{
+        @include rect(100%,.44rem);
+        text-align: center;
+        line-height:.54rem;
+        color: #232322;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: auto; }
+
+.intro-logo {
+  width: 4.82rem;
+  height: 1.64rem;
+  margin: .4rem auto; }
+
+.intro-title {
+  width: 4.82rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  color: #16ACF0;
+  margin-bottom: .2rem;
+  position: relative; }
+  .intro-title .blue {
+    width: 100%;
+    height: 0.02rem;
+    position: absolute;
+    top: -.1rem;
+    left: 0; }
+  .intro-title span {
+    display: block;
+    width: 1.4rem;
+    height: 100%;
+    background: #ffffff;
+    padding: 0 .1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 10;
+    text-align: center; }
+
+.intro-main {
+  width: 100%;
+  min-height: 4.2rem;
+  padding: .24rem; }
+  .intro-main p {
+    width: 1rem;
+    height: 0.4rem;
+    text-align: center;
+    color: #16ACF0;
+    border-bottom: .01rem solid #16ACF0; }
+  .intro-main .content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: .24rem;
+    padding-right: .6rem;
+    padding-left: .2rem; }
+    .intro-main .content li {
+      width: 2.7rem;
+      height: 6.8rem;
+      float: left;
+      margin: 0 0 .24rem .4rem;
+      overflow: hidden; }
+      .intro-main .content li .imgbox {
+        width: 100%;
+        height: 3.66rem;
+        position: relative;
+        overflow: hidden; }
+        .intro-main .content li .imgbox .border {
+          position: absolute;
+          z-index: 8; }
+        .intro-main .content li .imgbox .person {
+          position: absolute;
+          top: .16rem;
+          left: .16rem; }
+      .intro-main .content li .text {
+        width: 100%;
+        height: 3.14rem;
+        padding: .24rem .18rem; }
+        .intro-main .content li .text .name {
+          border-left: .04rem solid #C91623;
+          margin-bottom: .16rem;
+          padding-left: .16rem;
+          font-size: .26rem; }
+          .intro-main .content li .text .name span {
+            font-weight: bold;
+            color: #C91623; }
+          .intro-main .content li .text .name em {
+            font-style: normal;
+            font-weight: bold; }
+        .intro-main .content li .text .message {
+          border-left: .04rem solid #EBEBEB;
+          padding-left: .16rem;
+          font-size: .22rem;
+          line-height: .34rem;
+          word-break: break-all;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 7;
+          overflow: hidden; }

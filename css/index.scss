@@ -1,0 +1,525 @@
+@import "selfsass";
+
+html, body {
+  @include rect(100%,auto);
+}
+
+::-webkit-scrollbar{height: 0.04rem;width: 0}
+::-webkit-scrollbar-track{background-color: #dffffc;}
+::-webkit-scrollbar-thumb{background-color:#16ACF0;border-radius: .04rem}
+::-webkit-scrollbar-thumb:hover {background-color:#9c3}
+::-webkit-scrollbar-thumb:active {background-color:#00aff0}
+
+.index-service{
+  @include rect(100%,1.29rem);
+  padding: .4rem 0;
+  .title{
+    @include rect(100%,.55rem);
+    margin-bottom: .24rem;
+    .inner{
+      @include rect(4rem,100%);
+      margin:0 auto;
+      font-size: .2rem;
+      .s-title{
+        @include rect(2rem,100%);
+        float: left;
+        color: #333333;
+        p{
+          text-align: center;
+        }
+      }
+      .line{
+        @include rect(1rem,100%);
+        float: left;
+        display: flex;
+        align-items: center;
+        span{
+          @include rect(1rem,.02rem);
+          background: #CCCCCC;
+        }
+      }
+    }
+  }
+}
+
+.index-scroll{
+  @include rect(7.5rem,2rem);
+  overflow-y:hidden;
+  ul{
+    @include rect(11.25rem,2rem);
+    li{
+      @include rect(1.875rem,100%);
+      float: left;
+      .imgbox{
+        @include rect(100%,1.08rem);
+        display: flex;
+        justify-content: center;
+        img{
+          @include zheng(1.06rem);
+          border:.02rem solid #CCCCCC;
+          border-radius: 50%;
+        }
+      }
+      .line{
+        @include rect(100%,.42rem);
+        display: flex;
+        justify-content: center;
+        span{
+          display: block;
+          @include rect(30%,.02rem);
+          margin: .2rem 0;
+          background: #000000;
+        }
+      }
+      p{
+        color: #333333;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.index-friend{
+  @include rect(100%,3rem);
+  padding: .4rem .24rem;
+  position: relative;
+  .title{
+    @include rect(100%,.55rem);
+    margin-bottom: .24rem;
+    .inner{
+      @include rect(6.4rem,100%);
+      margin:0 auto;
+      font-size: .2rem;
+      .s-title{
+        @include rect(4.4rem,100%);
+        float: left;
+        color: #333333;
+        //font-size: .18rem;
+        p{
+          text-align: center;
+        }
+      }
+      .line{
+        @include rect(1rem,100%);
+        float: left;
+        display: flex;
+        align-items: center;
+        span{
+          @include rect(1rem,.02rem);
+          background: #CCCCCC;
+        }
+      }
+    }
+  }
+  .rotate{
+    @include zheng(1.44rem);
+    position: relative;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    .border{
+      @include zheng(100%);
+      position:absolute;
+      top: 0;
+      left: 0;
+      padding: 0 .1rem;
+      animation: progress 5s infinite linear;
+    }
+    .backg{
+      @include zheng(100%);
+      position:absolute;
+      top: 0;
+      left: 0;
+    }
+    @keyframes progress {
+      0%{
+        transform: rotate(0);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .content{
+    @include rect(100%,1.41rem);
+  }
+  .swiper2-ul{
+    @include rect(100%,100%);
+    li{
+      @include rect(2.56rem,.56rem);
+      margin: .075rem 0;
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+  }
+}
+
+.index-about{
+  @include rect(100%,4rem);
+  padding:.4rem .24rem;
+  .title{
+    @include rect(100%,.55rem);
+    margin-bottom: .24rem;
+    .inner{
+      @include rect(3.8rem,100%);
+      margin:0 auto;
+      font-size: .2rem;
+      .s-title{
+        @include rect(1.8rem,100%);
+        float: left;
+        color: #333333;
+        p{
+          text-align: center;
+        }
+      }
+      .line{
+        @include rect(1rem,100%);
+        float: left;
+        display: flex;
+        align-items: center;
+        span{
+          @include rect(1rem,.02rem);
+          background: #CCCCCC;
+        }
+      }
+    }
+  }
+  .content{
+    @include rect(100%,2.41rem);
+    .left{
+      @include rect(2rem,100%);
+      background: #8AD5F7;
+      float: left;
+      position: relative;
+      .imgbox{
+        @include rect(100%,100%);
+        position: absolute;
+        top:.2rem;
+        left:.2rem;
+      }
+    }
+    .right{
+      @include rect(5.02rem,2rem);
+      margin-top: .41rem;
+      border:.02rem solid #CCCCCC;
+      float: left;
+      padding:.15rem .15rem .15rem .4rem;
+      .up{
+        @include rect(100%,80%);
+        color:#333333;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+        -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+        -webkit-line-clamp: 4; /** 显示的行数 **/
+        overflow: hidden;  /** 隐藏超出的内容 **/
+      }
+      .do{
+        @include rect(1.26rem,.4rem);
+        background: #16ACF0;
+        text-align: center;
+        color: #ffffff;
+        line-height: .4rem;
+        float: right;
+      }
+    }
+  }
+}
+
+.index-case {
+  @include rect(100%, 3.6rem);
+  padding: .4rem .24rem;
+  .title {
+    @include rect(100%, .55rem);
+    margin-bottom: .24rem;
+    .inner {
+      @include rect(4.8rem, 100%);
+      margin: 0 auto;
+      font-size: .2rem;
+      .s-title {
+        @include rect(2.8rem, 100%);
+        float: left;
+        color: #333333;
+        p {
+          text-align: center;
+        }
+      }
+      .line {
+        @include rect(1rem, 100%);
+        float: left;
+        display: flex;
+        align-items: center;
+        span {
+          @include rect(1rem, .02rem);
+          background: #CCCCCC;
+        }
+      }
+    }
+  }
+  .swiper3 {
+    @include rect(100%, 2.01rem);
+    .swiper-slide{
+      @include rect(2.18rem,100%);
+      border-radius: .1rem;
+      .imgbox{
+        @include rect(100%,75%);
+        img{
+          border-radius: .1rem .1rem 0 0;
+        }
+      }
+      .text{
+        @include rect(100%,25%);
+        background: #EEEEEE;
+        color: #333333;
+        text-align: center;
+        line-height: .5rem;
+        border-bottom: .04rem solid #16ACF0;
+        border-radius: 0 0 .1rem .1rem;
+      }
+    }
+  }
+}
+
+.index-care {
+  @include rect(100%, 3.2rem);
+  padding: .4rem .24rem;
+  .title {
+    @include rect(100%, .55rem);
+    margin-bottom: .24rem;
+    .inner {
+      @include rect(4.8rem, 100%);
+      margin: 0 auto;
+      font-size: .2rem;
+      .s-title {
+        @include rect(2.8rem, 100%);
+        float: left;
+        color: #333333;
+        p {
+          text-align: center;
+        }
+      }
+      .line {
+        @include rect(1rem, 100%);
+        float: left;
+        display: flex;
+        align-items: center;
+        span {
+          @include rect(1rem, .02rem);
+          background: #CCCCCC;
+        }
+      }
+    }
+  }
+  .content{
+    @include rect(100%,1.61rem);
+    li{
+      @include rect(25%,100%);
+      float: left;
+      .imgbox{
+        @include zheng(1.22rem);
+        border-radius: 50%;
+        margin:0 auto;
+        img{
+          border-radius: 50%;
+        }
+      }
+      p{
+        @include rect(100%,.39rem);
+        text-align: center;
+        margin-top: .14rem;
+      }
+    }
+  }
+}
+
+.index-team {
+  @include rect(100%, 6.2rem);
+  padding: .4rem .24rem;
+  .title {
+    @include rect(100%, .55rem);
+    margin-bottom: .24rem;
+    .inner {
+      @include rect(4rem, 100%);
+      margin: 0 auto;
+      font-size: .2rem;
+      .s-title {
+        @include rect(2rem, 100%);
+        float: left;
+        color: #333333;
+        p {
+          text-align: center;
+        }
+      }
+      .line {
+        @include rect(1rem, 100%);
+        float: left;
+        display: flex;
+        align-items: center;
+        span {
+          @include rect(1rem, .02rem);
+          background: #CCCCCC;
+        }
+      }
+    }
+  }
+  .content{
+    @include rect(100%,4.61rem);
+    position: relative;
+    .circle{
+      @include zheng(4rem);
+      position: absolute;
+      top:.3rem;
+      right:.5rem;
+      .person1{
+        @include zheng(1rem);
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top:-0.3rem;
+        left:.6rem;
+        img{
+          border-radius: 50%;
+        }
+      }
+      .person2 {
+        @include zheng(1.2rem);
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: -.4rem;
+        left: 2.3rem;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .person3 {
+        @include zheng(1rem);
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: 1rem;
+        left: 3.5rem;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .person4 {
+        @include zheng(1.2rem);
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: 2.5rem;
+        left: 2.9rem;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .person5 {
+        @include zheng(1rem);
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: 3.4rem;
+        left: 1.7rem;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .person6 {
+        @include zheng(.8rem);
+        border-radius: 50%;
+        border: .03rem solid #8AD5F7;
+        position: absolute;
+        top: 3.2rem;
+        left: .4rem;
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+    .imac{
+      @include rect(3.84rem,2.2rem);
+      position: absolute;
+      top:1.2rem;
+      left:.1rem;
+    }
+  }
+}
+
+.index-contact {
+  @include rect(100%, 3.93rem);
+  padding: .4rem 0;
+  .title {
+    @include rect(100%, .55rem);
+    margin-bottom: .24rem;
+    .inner {
+      @include rect(4rem, 100%);
+      margin: 0 auto;
+      font-size: .2rem;
+      .s-title {
+        @include rect(2rem, 100%);
+        float: left;
+        color: #333333;
+        p {
+          text-align: center;
+        }
+      }
+      .line {
+        @include rect(1rem, 100%);
+        float: left;
+        display: flex;
+        align-items: center;
+        span {
+          @include rect(1rem, .02rem);
+          background: #CCCCCC;
+        }
+      }
+    }
+  }
+  .content{
+    @include rect(100%,2.34rem);
+    padding:.34rem .54rem;
+    .inner{
+      @include rect(100%,100%);
+      border-radius: .1rem;
+      background: rgba(22, 172, 240, 0.5);
+      color: #dceaf1;
+      li{
+        @include rect(2.14rem,100%);
+        padding:.15rem 0;
+        float: left;
+        position: relative;
+        font-size: .14rem;
+        .line1{
+          @include rect(.02rem,1rem);
+          position: absolute;
+          top: .25rem;
+          right: 0;
+        }
+        .imgbox{
+          @include rect(100%,.4rem);
+          img{
+            @include zheng(.4rem);
+            display: block;
+            margin:0 auto;
+          }
+        }
+        p{
+          @include rect(100%,auto);
+          text-align: center;
+          margin-top:.03rem;
+          span{
+            display: block;
+            margin:0 auto;
+            @include rect(.2rem,.02rem);
+            background: #ffffff;
+          }
+        };
+      }
+    }
+  }
+}

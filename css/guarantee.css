@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: auto; }
+
+.protection-main {
+  width: 100%;
+  height: auto; }
+  .protection-main .protection-inner {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    padding: 48px 0; }
+    .protection-main .protection-inner .big-title {
+      width: 100%;
+      height: 120px; }
+      .protection-main .protection-inner .big-title p {
+        text-align: center;
+        color: #333333;
+        letter-spacing: 3px; }
+      .protection-main .protection-inner .big-title .t1 {
+        font-size: 32px;
+        color: #16acf0;
+        margin-bottom: 20px; }
+        .protection-main .protection-inner .big-title .t1 span {
+          font-weight: bold; }
+      .protection-main .protection-inner .big-title .t2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+      .protection-main .protection-inner .big-title .t3 {
+        font-size: 17px;
+        letter-spacing: 2px; }
+    .protection-main .protection-inner .protection-ul {
+      width: 100%;
+      height: 180px;
+      margin: 24px 0 48px 0; }
+      .protection-main .protection-inner .protection-ul li {
+        width: 180px;
+        height: 100%;
+        margin-left: 67.5px;
+        border-radius: 50%;
+        float: left; }
+        .protection-main .protection-inner .protection-ul li img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%; }
+      .protection-main .protection-inner .protection-ul li:first-of-type {
+        margin-left: 0; }
+    .protection-main .protection-inner .message {
+      width: 100%;
+      height: 320px;
+      margin: 32px 0 48px 0; }
+      .protection-main .protection-inner .message .imgbox {
+        width: 50%;
+        height: 100%;
+        float: left; }
+        .protection-main .protection-inner .message .imgbox img {
+          width: 100%;
+          height: 100%; }
+      .protection-main .protection-inner .message .text {
+        width: 50%;
+        height: 100%;
+        float: left;
+        background: #EEEEEE;
+        padding: 24px;
+        font-size: 18px;
+        color: #333333;
+        line-height: 30px; }
+    .protection-main .protection-inner .carousel {
+      width: 850px;
+      height: 260px;
+      margin: 48px auto;
+      position: relative; }
+    .protection-main .protection-inner .last-contact {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      font-size: 18px;
+      color: #333333;
+      line-height: 35px;
+      letter-spacing: 1px; }
+      .protection-main .protection-inner .last-contact .left {
+        width: 360px;
+        height: auto;
+        float: left; }
+        .protection-main .protection-inner .last-contact .left span {
+          font-weight: bold; }
+      .protection-main .protection-inner .last-contact .right {
+        width: 360px;
+        height: auto;
+        float: right; }
+        .protection-main .protection-inner .last-contact .right i {
+          width: 16%;
+          height: 100%;
+          display: block;
+          float: left;
+          font-style: normal; }
+        .protection-main .protection-inner .last-contact .right span {
+          font-weight: bold; }
+
+.guarantee-main {
+  width: 100%;
+  height: auto;
+  padding: .24rem; }
+  .guarantee-main h2 {
+    color: #16acf0;
+    margin-bottom: .12rem;
+    text-align: center; }
+  .guarantee-main h4, .guarantee-main h5 {
+    margin-bottom: .08rem;
+    text-align: center; }
+  .guarantee-main .list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .16rem;
+    margin-bottom: .24rem; }
+    .guarantee-main .list li {
+      width: 1rem;
+      height: auto; }
+      .guarantee-main .list li .imgbox {
+        width: 1rem;
+        height: 1rem; }
+      .guarantee-main .list li .explain {
+        text-align: center;
+        line-height: .32rem;
+        font-size: .22rem;
+        padding: .1rem 0; }
+  .guarantee-main .easy {
+    width: 100%;
+    height: 2.1rem;
+    margin-top: .16rem;
+    margin-bottom: .4rem; }
+    .guarantee-main .easy .imgbox {
+      width: 50%;
+      height: 100%;
+      float: left; }
+    .guarantee-main .easy .text {
+      width: 50%;
+      height: 100%;
+      padding: .16rem;
+      background: #EEEEEE;
+      color: #333333;
+      font-size: .22rem;
+      line-height: .31rem;
+      float: left; }
+  .guarantee-main .carousel {
+    width: 100%;
+    height: 1.86rem;
+    position: relative; }
+    .guarantee-main .carousel .swiper-container {
+      width: 80%;
+      height: 1.86rem;
+      margin: 0 auto;
+      margin-top: .16rem;
+      margin-bottom: .4rem; }
+      .guarantee-main .carousel .swiper-container .swiper-wrapper {
+        width: 100%;
+        height: 100%; }
+        .guarantee-main .carousel .swiper-container .swiper-wrapper .swiper-slide {
+          width: 100%;
+          height: 100%; }
+      .guarantee-main .carousel .swiper-container .swiper-pagination {
+        bottom: 0; }
+    .guarantee-main .carousel .swiper-button-next {
+      width: 0.5rem;
+      height: 0.5rem;
+      transform: translate(50%, 0); }
+    .guarantee-main .carousel .swiper-button-prev {
+      width: 0.5rem;
+      height: 0.5rem;
+      transform: translate(-50%, 0); }
+  .guarantee-main p {
+    margin-top: .1rem;
+    color: #333333; }
+    .guarantee-main p span {
+      font-weight: bold; }
+  .guarantee-main .last {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    .guarantee-main .last i {
+      width: 18%;
+      height: auto;
+      float: left;
+      display: block;
+      font-style: normal; }
+    .guarantee-main .last span {
+      width: 82%;
+      height: auto;
+      float: left;
+      display: block; }

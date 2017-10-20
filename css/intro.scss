@@ -1,0 +1,57 @@
+@import "selfsass";
+
+html, body {
+  @include rect(100%, auto);
+}
+
+.intro-logo{
+  @include rect(4.82rem,1.64rem);
+  margin: .4rem auto;
+}
+
+.intro-title{
+  @include rect(4.82rem,.3rem);
+  margin: 0 auto;
+  color:#16ACF0;
+  margin-bottom: .2rem;
+  position: relative;
+  .blue{
+    @include rect(100%,.02rem);
+    position: absolute;
+    top: -.1rem;
+    left: 0;
+  }
+  span{
+    display: block;
+    @include rect(1.4rem,100%);
+    background: #ffffff;
+    padding: 0 .1rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    z-index:10;
+    text-align: center;
+  }
+}
+
+.intro-main{
+  width:100%;
+  min-height: 4.2rem;
+  padding:.24rem;
+  p{
+    @include rect(1rem,.4rem);
+    text-align: center;
+    color: #16ACF0;
+    border-bottom: .01rem solid #16ACF0;
+    margin-bottom: .1rem;
+  }
+  .content{
+    @include rect(100%,auto);
+    line-height: .34rem;
+    letter-spacing: .02rem;
+    margin-bottom: .2rem
+  }
+}

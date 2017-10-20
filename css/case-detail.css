@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: auto;
+  background: #EEEEEE; }
+
+.intro-logo {
+  width: 4.82rem;
+  height: 1.64rem;
+  margin: .4rem auto; }
+
+.cdetail-title {
+  width: 100%;
+  height: 0.3rem;
+  margin: .2rem auto;
+  color: #16ACF0;
+  position: relative;
+  padding: 0 .24rem; }
+  .cdetail-title .blue {
+    width: 90%;
+    height: 0.02rem;
+    position: absolute;
+    top: -.1rem;
+    left: .24rem; }
+  .cdetail-title span {
+    display: block;
+    width: 1.4rem;
+    height: 100%;
+    background: #eeeeee;
+    padding: 0 .1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 10;
+    text-align: center; }
+
+.cdetail-main {
+  width: 100%;
+  min-height: 6.04rem;
+  padding: 0 .24rem;
+  margin-bottom: .4rem;
+  background: #ffffff; }
+  .cdetail-main .stitle {
+    width: 100%;
+    height: 0.6rem;
+    text-align: center;
+    line-height: .6rem;
+    font-size: .3rem;
+    font-weight: bold; }
+  .cdetail-main .message {
+    width: 100%;
+    height: 0.6rem;
+    color: #CCCCCC; }
+    .cdetail-main .message span i {
+      font-style: normal; }
+    .cdetail-main .message span:first-of-type {
+      float: left; }
+    .cdetail-main .message span:last-of-type {
+      float: right; }
+  .cdetail-main .text {
+    width: 100%;
+    height: auto;
+    padding-bottom: .24rem;
+    font-size: .23rem;
+    line-height: .32rem; }
+
+.tdetail-main {
+  width: 100%;
+  min-height: 6.04rem;
+  padding: 0 .24rem;
+  margin-bottom: .4rem;
+  background: #ffffff; }
+  .tdetail-main .stitle {
+    width: 100%;
+    height: 0.6rem;
+    text-align: center;
+    line-height: .6rem;
+    font-size: .3rem;
+    font-weight: bold; }
+  .tdetail-main .text {
+    width: 100%;
+    height: auto;
+    padding-bottom: .24rem; }
+    .tdetail-main .text img {
+      width: 2.6rem;
+      height: 3rem;
+      float: right;
+      margin: .2rem 0 .2rem .2rem; }
+    .tdetail-main .text p {
+      line-height: .38rem; }
+      .tdetail-main .text p span {
+        font-weight: bold;
+        font-size: .26rem; }
+      .tdetail-main .text p i {
+        font-style: normal; }
